@@ -35,18 +35,18 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})//无数据库运行
 @RestController
 @Configuration
-public class Springboot2Application extends SpringBootServletInitializer {
+public class Springboot3Application extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(Springboot2Application.class);
+		return application.sources(Springboot3Application.class);
 	}
 
 	public static void main(String[] args) {
 		System.out.println("------------------------------------------");
 		System.out.println("Springboot2Application run!");
 		System.out.println("------------------------------------------");
-		SpringApplication.run(Springboot2Application.class, args);
+		SpringApplication.run(Springboot3Application.class, args);
 	}
 	
 	
